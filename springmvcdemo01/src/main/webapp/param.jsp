@@ -47,11 +47,14 @@
 
 <%--<a href="/anno/PathVariable/10">param</a>--%>
 
-<form action="/param/moduleAttribute" method="post">
-    姓名：<input type="text" name="uname"><br>
-    密码：<input type="text" name="age"><br>
-    日期：<input type="text" name="date"><br>
-    <input type="submit" value="提交">
-</form>
+<%--<form action="/anno/moduleAttribute" method="post">--%>
+<%--    姓名：<input type="text" name="uname"><br>--%>
+<%--    密码：<input type="text" name="age"><br>--%>
+<%--    日期：<input type="text" name="date"><br>--%>
+<%--    <input type="submit" value="提交">--%>
+<%--</form>--%>
+<a href="anno/testSessionAttributes">testSessionAttributes</a>
+<a href="/anno/getSessionAttributes">getSessionAttributes</a>
+<a href="/anno/delSessionAttributes">delSessionAttributes</a>
 </body>
 </html>
