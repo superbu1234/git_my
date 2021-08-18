@@ -3,11 +3,18 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc02_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc02_throw" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES5" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc02_throw/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc02_interceptor/pom.xml" />
       </list>
     </option>
   </component>

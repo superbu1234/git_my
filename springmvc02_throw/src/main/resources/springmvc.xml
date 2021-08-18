@@ -10,7 +10,7 @@ http://www.springframework.org/schema/mvc
 http://www.springframework.org/schema/mvc/spring-mvc.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-    <!-- 配置spring创建容器时要扫描的包 -->
+    <!--    要扫描的包-->
     <context:component-scan base-package="cn.nepu.stu"></context:component-scan>
     <!-- 配置视图解析器 -->
     <bean id="viewResolver"
@@ -18,17 +18,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
         <property name="prefix" value="/WEB-INF/pages/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
-    <!-- 配置文件上传解析器 -->
-    <!-- id 的值是固定的-->
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="10485760"></property>
-    </bean>
-    <!-- 配置spring开启注解mvc的支持-->
+    <!--    配置异常处理器-->
+    <bean id="sysExceptionResolver" class="cn.nepu.stu.exception.SysExceptionResolver"></bean>
+    <!--    开启注解支持-->
     <mvc:annotation-driven></mvc:annotation-driven>
-    <!--    前缀控制器，那些静态资源不需要被拦截-->
-    <!-- 设置静态资源不过滤 -->
-    <!--    <mvc:resources location="/css/" mapping="/css/**"/> &lt;!&ndash; 样式 &ndash;&gt;-->
-    <!--    <mvc:resources location="/images/" mapping="/images/**"/> &lt;!&ndash; 图片 &ndash;&gt;-->
-    <mvc:resources location="/js/" mapping="/js/**"/> <!-- javascript -->
-
 </beans>

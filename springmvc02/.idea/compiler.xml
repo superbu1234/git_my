@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc02" />
+        <module name="springmvc02_throw" />
+        <module name="springmvc02_interceptor" />
       </profile>
     </annotationProcessing>
   </component>
